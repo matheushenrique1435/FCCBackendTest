@@ -1,0 +1,28 @@
+﻿namespace FCCBackendTest.AuthAPI.Configuracao
+{
+    public class JwtAutenticacaoConfiguracao
+    {
+
+        public string SecretKey { get; set; }
+        public int ExpirationTimeInHours { get; set; }
+        public string Issuer { get; set; }
+        public string Audience { get; set; }
+
+        public JwtAutenticacaoConfiguracao()
+        {
+
+        }
+
+        public JwtAutenticacaoConfiguracao(string secretKey,
+                                         int expirationTimeInHours,
+                                         string issuer,
+                                         string audience)
+        {
+            SecretKey = secretKey;
+            ExpirationTimeInHours = expirationTimeInHours;
+            Issuer = issuer;
+            Audience = audience;
+        }
+
+    }
+}
